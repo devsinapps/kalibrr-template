@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,700");
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+html body #root #Routes .Navbar_Custome {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  height: 60px;
+  z-index: 2; }
+
+html body #root #Routes .Sidebar_Custome .Sidebar-Menu {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  height: 100vh;
+  width: 200px;
+  transition: all .3s;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  background-color: #ffffff; }
+
+html body #root #Routes .Sidebar_Custome .Sidebar-Menu-Toggle {
+  left: -200px; }
+
+html body #root #Routes .Pages {
+  position: absolute;
+  top: 70px;
+  left: 210px;
+  right: 0;
+  z-index: 1;
+  transition: all .3s; }
+
+html body #root #Routes .Pages-Toggle {
+  left: 0; }
+
+html body #root #Routes .Pages-Auth-Active {
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 200px;
+  min-height: 100%; }
+
+html body #root #Routes .Sidebar_Custome .Sidebar-Menu ul li {
+  cursor: pointer;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px; }
+  html body #root #Routes .Sidebar_Custome .Sidebar-Menu ul li:hover {
+    background-color: #f2f2f2; }
+  html body #root #Routes .Sidebar_Custome .Sidebar-Menu ul li svg {
+    margin-right: 5px; }
+
+html body #root #Routes .Navbar_Custome .left-side ul, html body #root #Routes .Navbar_Custome .right-side ul, html body #root #Routes .Footer_Custome .Footer-Menu .row .col-lg-3 .card .card-body ul, html body #root #Routes .Footer_Custome .Footer-Media .row .col-lg-3 .card .card-body ul, html body #root #Routes .Footer_Custome .Footer-Term .row .col-lg-12 .card .card-body ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+html body #root #Routes .Navbar_Custome .right-side ul .Dropdown_Navbar_Message .card .card-body {
+  margin: 0;
+  padding: 0; }
+
+html body #root #Routes .Navbar_Custome .right-side ul li a:hover {
+  text-decoration: none; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+  html body {
+    background-color: #f2f2f2; }
+    html body #root #Routes .Navbar_Custome {
+      font-family: 'Poppins', sans-serif; }
+      html body #root #Routes .Navbar_Custome .left-side {
+        position: absolute;
+        left: 20px;
+        cursor: pointer; }
+        html body #root #Routes .Navbar_Custome .left-side ul li {
+          display: inline-block;
+          margin-right: 10px; }
+      html body #root #Routes .Navbar_Custome .right-side {
+        position: absolute;
+        right: 20px;
+        cursor: pointer; }
+        html body #root #Routes .Navbar_Custome .right-side ul li {
+          height: 60px;
+          line-height: 60px;
+          display: inline-block;
+          padding: 0 20px 0 20px;
+          transition: all .3s; }
+          html body #root #Routes .Navbar_Custome .right-side ul li:hover {
+            background-color: #74b9ff;
+            color: #ffffff; }
+          html body #root #Routes .Navbar_Custome .right-side ul li:hover svg {
+            color: #ffffff; }
+          html body #root #Routes .Navbar_Custome .right-side ul li svg {
+            font-size: 18px; }
+          html body #root #Routes .Navbar_Custome .right-side ul li .profilePict {
+            height: 30px;
+            width: 30px; }
+        html body #root #Routes .Navbar_Custome .right-side ul .Dropdown_Navbar_Profile {
+          position: fixed;
+          top: 60px;
+          right: 20px; }
+          html body #root #Routes .Navbar_Custome .right-side ul .Dropdown_Navbar_Profile ul li {
+            display: block; }
+        html body #root #Routes .Navbar_Custome .right-side ul .Dropdown_Navbar_Message {
+          position: fixed;
+          top: 60px;
+          right: 290px; }
+          html body #root #Routes .Navbar_Custome .right-side ul .Dropdown_Navbar_Message .card {
+            width: 350px; }
+            html body #root #Routes .Navbar_Custome .right-side ul .Dropdown_Navbar_Message .card .card-body {
+              max-height: 300px;
+              overflow: auto; }
+              html body #root #Routes .Navbar_Custome .right-side ul .Dropdown_Navbar_Message .card .card-body ul .Message-list {
+                border-radius: 0; }
+                html body #root #Routes .Navbar_Custome .right-side ul .Dropdown_Navbar_Message .card .card-body ul .Message-list:hover {
+                  background-color: #f5f6fa;
+                  color: #535c68; }
+                html body #root #Routes .Navbar_Custome .right-side ul .Dropdown_Navbar_Message .card .card-body ul .Message-list img {
+                  width: 20px;
+                  height: 20px;
+                  margin-right: 20px; }
+            html body #root #Routes .Navbar_Custome .right-side ul .Dropdown_Navbar_Message .card .card-footer {
+              background-color: #ffffff; }
+              html body #root #Routes .Navbar_Custome .right-side ul .Dropdown_Navbar_Message .card .card-footer .card-text {
+                text-align: center;
+                color: #74b9ff; }
+        html body #root #Routes .Navbar_Custome .right-side ul .Dropdown_Navbar_Notification {
+          position: fixed;
+          top: 60px;
+          right: 220px; }
+          html body #root #Routes .Navbar_Custome .right-side ul .Dropdown_Navbar_Notification ul li {
+            display: block; }
+    html body #root #Routes .Sidebar_Custome {
+      position: relative;
+      font-family: 'Poppins', sans-serif; }
+      html body #root #Routes .Sidebar_Custome .Sidebar-Menu ul {
+        margin-top: 10px; }
+    html body #root #Routes .Pages-Auth-Active .Pages-Loading {
+      margin-top: 5%;
+      text-align: center; }
+      html body #root #Routes .Pages-Auth-Active .Pages-Loading img {
+        width: 50px;
+        height: 50px; }
+    html body #root #Routes .Pages-Auth-Active .SignIn .container-fluid .row .col-lg-4 .card .card-body {
+      padding: 40px; }
+      html body #root #Routes .Pages-Auth-Active .SignIn .container-fluid .row .col-lg-4 .card .card-body .card-title {
+        font-size: 20px;
+        text-align: center; }
+      html body #root #Routes .Pages-Auth-Active .SignIn .container-fluid .row .col-lg-4 .card .card-body form .form-group {
+        position: relative; }
+        html body #root #Routes .Pages-Auth-Active .SignIn .container-fluid .row .col-lg-4 .card .card-body form .form-group input {
+          height: 50px; }
+        html body #root #Routes .Pages-Auth-Active .SignIn .container-fluid .row .col-lg-4 .card .card-body form .form-group .icon-input-password {
+          position: absolute;
+          top: 45px;
+          right: 10px;
+          cursor: pointer; }
+    html body #root #Routes .Pages-Auth-Active .SignUp .container-fluid .row .col-lg-6 .card .card-body {
+      padding: 40px; }
+      html body #root #Routes .Pages-Auth-Active .SignUp .container-fluid .row .col-lg-6 .card .card-body .card-title {
+        font-size: 20px;
+        text-align: center; }
+      html body #root #Routes .Pages-Auth-Active .SignUp .container-fluid .row .col-lg-6 .card .card-body form .form-group {
+        position: relative; }
+        html body #root #Routes .Pages-Auth-Active .SignUp .container-fluid .row .col-lg-6 .card .card-body form .form-group input {
+          height: 50px; }
+        html body #root #Routes .Pages-Auth-Active .SignUp .container-fluid .row .col-lg-6 .card .card-body form .form-group .icon-input-password {
+          position: absolute;
+          top: 45px;
+          right: 10px;
+          cursor: pointer; }
+    html body #root #Routes .Footer_Custome {
+      position: absolute;
+      bottom: -200px;
+      width: 100%;
+      background-color: #017f7f; }
+      html body #root #Routes .Footer_Custome .Footer-Menu {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+        html body #root #Routes .Footer_Custome .Footer-Menu .row .col-lg-3 .card {
+          border: none;
+          background-color: transparent; }
+          html body #root #Routes .Footer_Custome .Footer-Menu .row .col-lg-3 .card .card-body .card-title {
+            font-size: 30px;
+            color: #ffffff; }
+          html body #root #Routes .Footer_Custome .Footer-Menu .row .col-lg-3 .card .card-body .card-text {
+            font-size: 16px;
+            color: #ffffff; }
+          html body #root #Routes .Footer_Custome .Footer-Menu .row .col-lg-3 .card .card-body ul li {
+            cursor: pointer;
+            color: #ffffff; }
+            html body #root #Routes .Footer_Custome .Footer-Menu .row .col-lg-3 .card .card-body ul li:hover {
+              font-weight: bold; }
+      html body #root #Routes .Footer_Custome .Footer-Media {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+        html body #root #Routes .Footer_Custome .Footer-Media .row .col-lg-3 .card {
+          border: none;
+          background-color: transparent; }
+          html body #root #Routes .Footer_Custome .Footer-Media .row .col-lg-3 .card .card-body ul li {
+            display: inline-block;
+            margin-right: 10px;
+            color: #ffffff; }
+            html body #root #Routes .Footer_Custome .Footer-Media .row .col-lg-3 .card .card-body ul li svg {
+              font-size: 20px; }
+      html body #root #Routes .Footer_Custome .Footer-Term .row .col-lg-12 .card {
+        border: none;
+        background-color: transparent; }
+        html body #root #Routes .Footer_Custome .Footer-Term .row .col-lg-12 .card .card-body ul li {
+          color: #ffffff;
+          display: inline-block;
+          margin-right: 10px; }
+          html body #root #Routes .Footer_Custome .Footer-Term .row .col-lg-12 .card .card-body ul li a {
+            color: #ffffff;
+            font-size: 17px; }

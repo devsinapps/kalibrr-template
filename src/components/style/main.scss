@@ -1,0 +1,388 @@
+@import 'sass/reset';
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,700');
+
+%navbar-style {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  height: 60px;
+  z-index: 2;
+}
+
+%sidebar-style {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  height: 100vh;
+  width: 200px;
+  transition: all .3s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.4);
+  background-color: #ffffff;
+}
+
+%sidebar-style-toggle {
+  left: -200px;
+}
+
+%pages-style {
+	position: absolute;
+	top: 70px;
+	left: 210px;
+	right: 0;
+	z-index: 1;
+	transition: all .3s;
+}
+
+%pages-style-toggle {
+	left: 0;
+}
+
+%pages-auth-active-style {
+	position: relative;
+	padding-top: 90px;
+	padding-bottom: 200px;
+	min-height: 100%;
+}
+
+%li-style {
+	cursor: pointer;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+	&:hover{
+		background-color: #f2f2f2;
+	}
+	svg{
+		margin-right: 5px;
+	}
+	span{
+
+	}
+}
+
+%ul-reset {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+%card-body-reset {
+	margin: 0;
+	padding: 0;
+}
+
+%href-reset {
+	text-decoration: none;
+}
+
+html{
+	position: relative;
+	min-height: 100%;	
+	body{
+		background-color: #f2f2f2;
+		#root{
+			#Routes{
+				.Navbar_Custome{
+				    @extend %navbar-style;
+				    font-family: 'Poppins', sans-serif;
+				    .left-side{
+				    	position: absolute;
+				    	left: 20px;
+				    	cursor: pointer;
+				    	ul{
+				    		@extend %ul-reset;
+				    		li{
+				    			display: inline-block;
+				    			margin-right: 10px;
+				    		}
+				    	}
+				    }
+				    .right-side{
+				    	position: absolute;
+				    	right: 20px;
+				    	cursor: pointer;
+				    	ul{
+				    		@extend %ul-reset;
+				    		li{
+				    			height: 60px;
+				    			line-height: 60px;
+				    			display: inline-block;
+				    			padding: 0 20px 0 20px;
+				    			transition: all .3s;
+				    			&:hover{
+				    				background-color: #74b9ff;
+				    				color: #ffffff;
+				    			}
+				    			&:hover svg{
+				    				color: #ffffff;
+				    			}
+				    			svg{
+				    				font-size: 18px;
+				    			}
+				    			.profilePict{
+				    				height: 30px;
+				    				width: 30px;
+				    			}
+				    			a{
+				    				&:hover{
+				    					@extend %href-reset;
+				    				}
+				    			}
+				    		}
+				    		.Dropdown_Navbar_Profile{
+				    			position: fixed;
+				    			top: 60px;
+				    			right: 20px;
+				    			ul{
+
+				    				li{	
+
+				    					display: block;
+				    				}
+				    			}
+				    		}
+				    		.Dropdown_Navbar_Message{
+				    			position: fixed;
+				    			top: 60px;
+				    			right: 290px;
+				    			.card{
+				    				width: 350px;
+				    				.card-body{
+				    					@extend %card-body-reset;
+				    					max-height: 300px;
+				    					overflow: auto;
+				    					ul{
+				    						.Message-list{
+				    							border-radius: 0;
+				    							&:hover{
+				    								background-color: #f5f6fa;
+				    								color: #535c68;
+				    							}
+				    							img{
+				    								width: 20px;
+				    								height: 20px;
+				    								margin-right: 20px;
+				    							}
+				    						}
+				    					}
+				    				}
+				    				.card-footer{
+				    					background-color: #ffffff;
+				    					.card-text{
+				    						text-align: center;
+				    						color: #74b9ff;
+				    					}
+				    				}
+				    			}
+				    		}
+				    		.Dropdown_Navbar_Notification{
+				    			position: fixed;
+				    			top: 60px;
+				    			right: 220px;
+				    			ul{
+
+				    				li{	
+
+				    					display: block;
+				    				}
+				    			}
+				    		}
+				    	}
+				    }
+				}
+				.Sidebar_Custome{
+					position: relative;
+					 font-family: 'Poppins', sans-serif;
+					.Sidebar-Menu{
+						@extend %sidebar-style;
+						ul{
+							margin-top:10px;
+							li{
+								@extend %li-style;
+							}
+						}
+					}
+					.Sidebar-Menu-Toggle{
+						@extend	%sidebar-style-toggle;
+					}
+				}
+				.Pages{
+					@extend %pages-style;
+					.container-fluid{
+						.grid-custome{
+
+						}
+					}
+				}
+				.Pages-Toggle{
+					@extend %pages-style-toggle;
+				}
+				.Pages-Auth-Active{
+					@extend %pages-auth-active-style;
+					.Pages-Loading{
+						margin-top: 5%;
+						text-align: center;
+						img{
+							width: 50px;
+							height: 50px;
+						}
+					}
+					.SignIn{
+						.container-fluid{
+							.row{
+								.col-lg-4{
+									.card{
+										.card-body{
+											padding: 40px;
+											.card-title{
+												font-size: 20px;
+												text-align: center;
+											}
+											form{
+												.form-group{
+													position: relative;
+													label{
+
+													}
+													input{
+														height: 50px;
+													}
+													.icon-input-password{
+														position: absolute;
+														top: 45px;
+														right: 10px;
+														cursor: pointer;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					.SignUp{
+						.container-fluid{
+							.row{
+								.col-lg-6{
+									.card{
+										.card-body{
+											padding: 40px;
+											.card-title{
+												font-size: 20px;
+												text-align: center;
+											}
+											form{
+												.form-group{
+													position: relative;
+													label{
+
+													}
+													input{
+														height: 50px;
+													}
+													.icon-input-password{
+														position: absolute;
+														top: 45px;
+														right: 10px;
+														cursor: pointer;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				.Footer_Custome{
+					position: absolute;
+					bottom: -200px;
+					width: 100%;
+					background-color: #017f7f;
+					.Footer-Menu{
+						border-bottom: 1px solid rgba(0,0,0,.2);
+						.row{
+							.col-lg-3{
+								.card{
+									border: none;
+									background-color: transparent;
+									.card-body{
+										.card-title{
+											font-size: 30px;
+											color: #ffffff;
+										}
+										.card-text{
+											font-size: 16px;
+											color: #ffffff;
+										}
+										ul{
+											@extend %ul-reset;
+											li{
+												cursor: pointer;
+												color: #ffffff;
+												&:hover{
+													font-weight: bold;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					.Footer-Media{
+						border-bottom: 1px solid rgba(0,0,0,.2);
+						.row{
+							.col-lg-3{
+								.card{
+									border: none;
+									background-color: transparent;
+									.card-body{
+										ul{
+											@extend %ul-reset;
+											li{
+												display: inline-block;
+												margin-right: 10px;
+												color: #ffffff;
+												svg{
+													font-size: 20px;
+												}
+											}
+										}
+									}
+								}
+							}
+						}		
+					}
+					.Footer-Term{
+						.row{
+							.col-lg-12{
+								.card{
+									border: none;
+									background-color: transparent;
+									.card-body{
+										ul{
+											@extend %ul-reset;
+											li{
+												color: #ffffff;
+												display: inline-block;
+												margin-right: 10px;
+												a{
+													color: #ffffff;
+													font-size: 17px;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
